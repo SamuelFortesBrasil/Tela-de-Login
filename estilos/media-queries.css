@@ -21,6 +21,8 @@
         width: 70%;
     }
 
+
+
 }
 
 @media  screen and (min-width: 992px) {
@@ -32,13 +34,21 @@
         width: 950px!important;
     }
     #imagem{
-        float: left;
+        float: right;
         width: 50%;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 0px 20px 20px 0px;
         height: 100%;
     }
     #formulario{
-        float: right;
+        float: left;
         width: 50%;
+    }
+
+    #formulario > h1{
+        font-size: 2em;
+    }
+
+    #formulario > p{
+    font-size: 1.2em;
     }
 }

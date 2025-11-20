@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
@@ -16,7 +17,19 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja Bem-Vindo(a) novamente! Faça login para ter acesso ao ambiente.</p>
-                <form action="" method="post"></form>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="ilogin"><span class="material-symbols-outlined">person</span></label>
+                        <input type="email" id="ilogin" placeholder="username@exemple.com" autocomplete="email" required>
+                        
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"><span class="material-symbols-outlined">key</span></label>
+                        <input type="password" name="senha" id="isenha" placeholder="mínimo 8 caracteres: !2Ba" autocomplete="current-password" minlength="8" maxlength="15" required>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci a Senha</a> <span class="material-symbols-outlined">mail</span>
+                </form>
             </div>
         </section>
     </main>
