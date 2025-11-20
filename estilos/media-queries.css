@@ -12,6 +12,7 @@
     #imagem{
         float: left;
         width: 30%;
+        border-radius: 20px 0px 0px 20px;
         height: 100%;
     }
 
@@ -26,13 +27,14 @@
     body{
         background-image: linear-gradient(to top, #88DBB5,#34B8D9);
     }
-    
+
     #login{
         width: 950px!important;
     }
     #imagem{
         float: left;
         width: 50%;
+        border-radius: 20px 0px 0px 20px;
         height: 100%;
     }
     #formulario{
