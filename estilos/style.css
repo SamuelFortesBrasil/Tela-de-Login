@@ -36,8 +36,8 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+    transform: translate(-50%,-50%);
     transition: width 0.5s,heigth 0.5s;
     transition-timing-function: ease;
 
@@ -62,6 +62,7 @@ section#login{
     margin-bottom: 10px;
 }
 #formulario > p{
+    padding: 5px;
     font-size: 0.8em;
 }
 
@@ -75,6 +76,28 @@ form > input[type = submit]{
     border-radius: 5px;
     color: white;
 }
+
+.campo > label > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input{
+    background-color: #629e83;
+    font-size: 1em;
+    width: calc(100% - 47px);
+    height: 80%;
+    border: none;
+    border-radius: 5px;
+    transform: translateY(-10px);
+}
+
+.campo > input:focus-within{
+    background-color: white;
+}
+
 
 form > input[type = submit]:hover{
     cursor: pointer;
